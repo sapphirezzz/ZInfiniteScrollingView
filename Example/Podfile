@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ZInfiniteScrollingView_Example' do
+  pod 'ZInfiniteScrollingView', :path => '../'
+
+  target 'ZInfiniteScrollingView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G8c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0ab-Q9-nQc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="ubZ-9X-l1i">
+            <objects>
+                <navigationController id="0ab-Q9-nQc" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nZw-UX-qUc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9Ri-bi-imR" kind="relationship" relationship="rootViewController" id="nAh-cQ-GHp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="if6-2r-JnO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-823" y="44"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="LIb-fo-MmW">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="9Ri-bi-imR" customClass="ViewController" customModule="ZInfiniteScrollingView_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bdA-lk-672"/>
+                        <viewControllerLayoutGuide type="bottom" id="w5d-OP-1aA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CtN-T0-hTS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G08-cu-32v" customClass="ZInfiniteScrollingView" customModule="ZInfiniteScrollingView">
+                                <rect key="frame" x="0.0" y="233.5" width="375" height="200"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="InI-5W-7RQ"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUP-tr-Sqn">
+                                <rect key="frame" x="137.5" y="143.5" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="8Qi-tq-V6i"/>
+                                    <constraint firstAttribute="height" constant="40" id="gUS-8m-a7w"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="clickButtonWithSender:" destination="9Ri-bi-imR" eventType="touchUpInside" id="HDU-6U-d3i"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="G08-cu-32v" firstAttribute="leading" secondItem="CtN-T0-hTS" secondAttribute="leading" id="MBb-qT-GF2"/>
+                            <constraint firstItem="G08-cu-32v" firstAttribute="top" secondItem="bUP-tr-Sqn" secondAttribute="bottom" constant="50" id="OdH-3j-VF5"/>
+                            <constraint firstItem="bUP-tr-Sqn" firstAttribute="centerX" secondItem="CtN-T0-hTS" secondAttribute="centerX" id="XZ3-wD-MUG"/>
+                            <constraint firstAttribute="trailing" secondItem="G08-cu-32v" secondAttribute="trailing" id="hn5-lk-Ul4"/>
+                            <constraint firstItem="G08-cu-32v" firstAttribute="centerY" secondItem="CtN-T0-hTS" secondAttribute="centerY" id="xaD-cz-fsr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="185-yZ-S6L"/>
+                    <connections>
+                        <outlet property="testView" destination="G08-cu-32v" id="B5M-zj-1wQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Snw-kT-Y67" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-278.5" y="43.5"/>
+        </scene>
+    </scenes>
+</document>

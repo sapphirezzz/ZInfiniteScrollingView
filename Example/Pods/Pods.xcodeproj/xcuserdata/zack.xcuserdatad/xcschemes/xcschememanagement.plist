@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-ZInfiniteScrollingView_Example.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-ZInfiniteScrollingView_Tests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ZInfiniteScrollingView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>384DE6C292FB37639AFDE74975A5B1D3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3A17BB05202A62695AB69BADE41215E8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BDB6C9F17722007D48E7A75C781DEEC5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
