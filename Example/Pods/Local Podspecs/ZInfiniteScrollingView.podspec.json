@@ -1,22 +1,23 @@
 {
   "name": "ZInfiniteScrollingView",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "A short description of ZInfiniteScrollingView.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/ZackZheng2014/ZInfiniteScrollingView",
+  "homepage": "https://github.com/sapphirezzz/ZInfiniteScrollingView",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "ZackZheng2014": "zackzheng@meijiabang.cn"
+    "ZackZheng": "zhengzuanzhe@gmail.com"
   },
   "source": {
-    "git": "https://github.com/ZackZheng2014/ZInfiniteScrollingView.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/sapphirezzz/ZInfiniteScrollingView.git",
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "ZInfiniteScrollingView/Classes/**/*"
+  "source_files": "ZInfiniteScrollingView/Classes/**/*",
+  "frameworks": "UIKit"
 }
