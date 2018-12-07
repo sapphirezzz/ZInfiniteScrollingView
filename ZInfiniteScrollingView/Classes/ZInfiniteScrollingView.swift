@@ -31,7 +31,7 @@ public extension ZInfiniteScrollingViewDelegate {
 
 open class ZInfiniteScrollingView: UIView {
     
-    private static let DefaultScrollDirection = UICollectionViewScrollDirection.horizontal
+    private static let DefaultScrollDirection = UICollectionView.ScrollDirection.horizontal
     private static let DefaultPagingEnabled = false
     
     open weak var dataSource: ZInfiniteScrollingViewDataSource?
@@ -43,7 +43,7 @@ open class ZInfiniteScrollingView: UIView {
         }
     }
     
-    open var scrollDirection: UICollectionViewScrollDirection = DefaultScrollDirection {
+    open var scrollDirection: UICollectionView.ScrollDirection = DefaultScrollDirection {
         didSet {
             let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
             layout.scrollDirection = scrollDirection
@@ -312,9 +312,9 @@ private extension ZInfiniteScrollingView {
     var insets: UIEdgeInsets {
         
         if scrollDirection == .horizontal {
-            return UIEdgeInsetsMake(padding, itemSpacing, padding, itemSpacing)
+            return UIEdgeInsets(top: padding, left: itemSpacing, bottom: padding, right: itemSpacing)
         }else {
-            return UIEdgeInsetsMake(itemSpacing, padding, itemSpacing, padding)
+            return UIEdgeInsets(top: itemSpacing, left: padding, bottom: itemSpacing, right: padding)
         }
     }
     

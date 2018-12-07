@@ -1,16 +1,16 @@
 PODS:
-  - ZInfiniteScrollingView (0.1.1)
+  - ZInfiniteScrollingView (0.2.0)
 
 DEPENDENCIES:
   - ZInfiniteScrollingView (from `../`)
 
 EXTERNAL SOURCES:
   ZInfiniteScrollingView:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  ZInfiniteScrollingView: a85072a105151fb935015a1b68edeb93ded26433
+  ZInfiniteScrollingView: e6fe324e1ed5f948d49b7ba265cb3299be40d622
 
 PODFILE CHECKSUM: 9993eb02f1b5cd326e0c728dacb0171618cd26f5
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3
