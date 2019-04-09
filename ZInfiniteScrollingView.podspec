@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZInfiniteScrollingView'
-  s.version          = '0.2.0'
+  s.version          = '1.2.0'
   s.summary          = 'A short description of ZInfiniteScrollingView.'
 
   s.description      = <<-DESC
@@ -21,7 +21,7 @@ TODO: Add long description of the pod here.
   s.author           = { 'ZackZheng' => 'zhengzuanzhe@gmail.com' }
   s.source           = { :git => 'https://github.com/sapphirezzz/ZInfiniteScrollingView.git', :tag => s.version.to_s }
 
-  s.swift_version = '4.2'
+  s.swift_version = '5.0'
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'ZInfiniteScrollingView/Classes/**/*'
